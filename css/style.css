@@ -58,6 +58,32 @@ header a {
   padding: 16px 32px;
 }
 
+main h3 {
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+main h2 {
+  margin: 0;
+  line-height: 1.5;
+  padding-bottom: 15px;
+  font-size: 32px;
+}
+
+main p {
+  line-height: 2;
+  margin: 0;
+}
+
+section {
+  margin: 0 auto;
+  padding: 100px;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(13, 56, 85, 0.9),
@@ -70,25 +96,31 @@ footer {
   color: white;
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
+.why-amsterdam-section {
+  background-color: white;
+}
+
+.responsive-img {
+  max-width: 100%;
 }
 
 .grid {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 50px;
+}
+
+.three-column-one-narrow-grid {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.two-column-grid {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid a {
   color: white;
   display: inline-block;
   margin-bottom: 10px;
-}
-
-.three-cloumn-one-narrow-grid {
-  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .grid ul {
@@ -99,9 +131,9 @@ section {
   list-style: none;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1060px) {
   header {
-    padding: 30px 0;
+    padding: 60px 10px;
   }
 
   header h1 {
@@ -112,7 +144,11 @@ section {
     font-size: 20px;
   }
 
-  .grid.three-cloumn-one-narrow-grid {
+  main h2 {
+    font-size: 22px;
+  }
+
+  .grid {
     grid-template-columns: 1fr;
   }
 
