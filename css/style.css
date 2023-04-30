@@ -74,9 +74,21 @@ main h2 {
   font-size: 32px;
 }
 
-main p {
-  line-height: 2;
+main h4 {
+  font-size: 24px;
   margin: 0;
+  padding: 10px 0;
+}
+
+main h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+main p {
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.7;
 }
 
 section {
@@ -96,8 +108,37 @@ footer {
   color: white;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .why-amsterdam-section {
   background-color: white;
+}
+
+.favorite-section {
+  background-color: #f8f8f8;
+}
+
+.card {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.card-content {
+  padding: 10px 30px;
+}
+
+.card a {
+  background-color: rgba(13, 56, 85, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 14px;
+  padding: 16px 70px;
+  display: inline-block;
+  margin-top: 40px;
 }
 
 .responsive-img {
@@ -115,6 +156,10 @@ footer {
 
 .two-column-grid {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.three-column-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid a {
