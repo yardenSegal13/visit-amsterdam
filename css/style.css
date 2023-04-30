@@ -108,6 +108,10 @@ footer {
   color: white;
 }
 
+footer section {
+  padding: 20px 100px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -123,6 +127,10 @@ footer {
 .card {
   margin-top: 20px;
   background-color: white;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-content {
@@ -143,6 +151,12 @@ footer {
 
 .responsive-img {
   max-width: 100%;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+  grid-gap: 0;
 }
 
 .grid {
@@ -197,7 +211,15 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  section {
+  section,
+  footer section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+  .card-header iframe {
+    aspect-ratio: 16/9;
   }
 }
