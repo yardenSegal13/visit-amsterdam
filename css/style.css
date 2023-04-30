@@ -116,12 +116,25 @@ footer section {
   text-align: center;
 }
 
-.why-amsterdam-section {
+.why-amsterdam-section,
+.outside-amsterdam-section {
   background-color: white;
 }
 
 .favorite-section {
   background-color: #f8f8f8;
+}
+
+.outside-amsterdam-section h2 {
+  margin-bottom: 20px;
+}
+
+.outside-amsterdam-section .grid {
+  margin-top: 40px;
+}
+
+.outside-amsterdam-section img:hover {
+  filter: saturate(200%);
 }
 
 .card {
